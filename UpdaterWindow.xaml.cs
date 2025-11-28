@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Net.Http;
@@ -134,6 +134,7 @@ namespace discord_aio_release
                 if (vIsOk)
                 {
                     HttpClient cli = new HttpClient();
+                    cli.Timeout = TimeSpan.FromSeconds(5);
                     var content = new StringContent($"\"{_HWID}\"", Encoding.UTF8, "application/json");
                     HttpResponseMessage response = await cli.PostAsync("https://localhost:7118/user/check", content);
 
@@ -146,17 +147,11 @@ namespace discord_aio_release
                             Application.Current.Shutdown();
                         }
                     }
-                    else
-                    {
-                        MessageBox.Show("Something went wrong.\nPlease, contact the developers.", "Error");
-                        Application.Current.Shutdown();
-                    }
                 }
             }
             catch
             {
-                MessageBox.Show("Something went wrong.\nPlease, contact the developers.", "Error");
-                Application.Current.Shutdown();
+                // API endpoint not available - continue without user check
             }
 
             try

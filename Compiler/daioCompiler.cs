@@ -1,4 +1,4 @@
-﻿using Microsoft.CodeAnalysis;
+using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CSharp;
 using System;
@@ -72,9 +72,17 @@ namespace aiocompiler
                 }
                 else
                 {
-                    using (HttpClient c = new HttpClient())
+                    try
                     {
-                        var response = await c.PostAsync("https://localhost:7118/statistics/increment-pentests", null);
+                        using (HttpClient c = new HttpClient())
+                        {
+                            c.Timeout = TimeSpan.FromSeconds(3);
+                            var response = await c.PostAsync("https://localhost:7118/statistics/increment-pentests", null);
+                        }
+                    }
+                    catch
+                    {
+                        // API endpoint not available - continue anyway
                     }
                     MessageBox.Show("Compiled.");
                 }

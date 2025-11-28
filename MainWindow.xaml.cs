@@ -1,4 +1,4 @@
-﻿using Microsoft.Win32;
+using Microsoft.Win32;
 using System;
 using System.Diagnostics;
 using System.Net;
@@ -83,6 +83,7 @@ namespace discord_aio_release
         private async Task RefTick()
         {
             HttpClient _client = new HttpClient();
+            _client.Timeout = TimeSpan.FromSeconds(5);
             try
             {
                 var hwidContent = new StringContent($"\"{_HWID}\"", Encoding.UTF8, "application/json");
@@ -107,9 +108,13 @@ namespace discord_aio_release
                 JObject jsonObj3 = JObject.Parse(resBody3);
                 active_count.Content = jsonObj3["activeUsers"]?.ToString() ?? "0";
             }
-            catch (Exception ex)
+            catch
             {
-                MessageBox.Show($"An error occurred: {ex.Message}", "Error");
+                // API endpoint not available - use default values
+                opens_count.Content = "N/A";
+                stealers_count1.Content = "N/A";
+                users_count.Content = "N/A";
+                active_count.Content = "N/A";
             }
         }
 

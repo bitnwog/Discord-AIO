@@ -1,0 +1,37 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiscordAIO", "DiscordAIO.csproj", "{9A19103F-16F7-4668-BE54-9A1E7A4F7556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daioCompiler", "Compiler\daioCompiler.csproj", "{2B347F9C-6D25-4A2F-9A88-1E8B9E7D5C46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pentest", "Pentest\Pentest.csproj", "{3C458E8D-7E36-4B3F-AA99-2F9C8F6E4D57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "daioUpdater", "Updater\daioUpdater.csproj", "{4D569F0E-8F47-5C4F-BB10-3G0D9G7F5E68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A19103F-16F7-4668-BE54-9A1E7A4F7556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A19103F-16F7-4668-BE54-9A1E7A4F7556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A19103F-16F7-4668-BE54-9A1E7A4F7556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A19103F-16F7-4668-BE54-9A1E7A4F7556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B347F9C-6D25-4A2F-9A88-1E8B9E7D5C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B347F9C-6D25-4A2F-9A88-1E8B9E7D5C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B347F9C-6D25-4A2F-9A88-1E8B9E7D5C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B347F9C-6D25-4A2F-9A88-1E8B9E7D5C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C458E8D-7E36-4B3F-AA99-2F9C8F6E4D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C458E8D-7E36-4B3F-AA99-2F9C8F6E4D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C458E8D-7E36-4B3F-AA99-2F9C8F6E4D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C458E8D-7E36-4B3F-AA99-2F9C8F6E4D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D569F0E-8F47-5C4F-BB10-3G0D9G7F5E68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D569F0E-8F47-5C4F-BB10-3G0D9G7F5E68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D569F0E-8F47-5C4F-BB10-3G0D9G7F5E68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D569F0E-8F47-5C4F-BB10-3G0D9G7F5E68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
