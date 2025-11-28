@@ -18,7 +18,7 @@ namespace discord_aio_release
     {
         private protected string _HWID { get; set; }
         private protected string _DAIO { get; set; }
-        private protected string _V = "b1.1.1";
+        private protected string _V = "b2.0.0";
         private protected string _P = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
         private protected string _T = System.IO.Path.GetTempPath();
         private protected string daio_path { get; set; }
@@ -44,7 +44,7 @@ namespace discord_aio_release
                 Environment.Exit(0);
             }
 
-            _DAIO = System.IO.Path.Combine(_P, "Discord AIO");
+            _DAIO = System.IO.Path.Combine(_P, "BITNW MUSIC");
             if (!Directory.Exists(_DAIO)) { Directory.CreateDirectory(_DAIO); }
 
             if (!File.Exists(_DAIO + "\\daioCompiler.exe") || !Directory.Exists(System.IO.Path.Combine(_DAIO, "roslyn")))
@@ -63,7 +63,7 @@ namespace discord_aio_release
             daio_path = AppDomain.CurrentDomain.BaseDirectory;
             if (daio_path == null)
             {
-                MessageBox.Show("Updater couldn't find your application.\nPlease download the new version manually.", "Discord AIO");
+                MessageBox.Show("Updater couldn't find your application.\nPlease download the new version manually.", "BITNW MUSIC");
                 Application.Current.Shutdown();
             }
 
@@ -114,7 +114,7 @@ namespace discord_aio_release
                             }
                             else
                             {
-                                MessageBox.Show("Updater couldn't find your application path.\nPlease download the new version manually.", "Discord AIO");
+                                MessageBox.Show("Updater couldn't find your application path.\nPlease download the new version manually.", "BITNW MUSIC");
                                 Application.Current.Shutdown();
                             }
                         }
@@ -143,7 +143,7 @@ namespace discord_aio_release
                         var reponseContent = await response.Content.ReadAsStringAsync();
                         if (reponseContent.Contains("User is banned"))
                         {
-                            MessageBox.Show("Ouch! You were banned from using this software.", "Discord AIO");
+                            MessageBox.Show("Ouch! You were banned from using this software.", "BITNW MUSIC");
                             Application.Current.Shutdown();
                         }
                     }
@@ -167,7 +167,7 @@ namespace discord_aio_release
                     //    compilerClient.DownloadFile("https://cdn.discordapp.com/attachments/1167109154855456768/1167883584577753230/BouncyCastle.Crypto.dll", _DAIO + "\\BouncyCastle.Crypto.dll");
 
                     updaterBar.Value = 95;
-                    updaterLabel.Content = "LOADING DISCORD AIO";
+                    updaterLabel.Content = "LOADING BITNW MUSIC";
                     updaterBar.Value = 100;
                     MainWindow launch = new MainWindow(_V, _HWID, _DAIO);
                     launch.Owner = this;

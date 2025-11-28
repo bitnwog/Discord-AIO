@@ -1,11 +1,11 @@
-﻿<Window x:Class="discord_aio_release.MainWindow"
+<Window x:Class="discord_aio_release.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:discord_aio_release"
         mc:Ignorable="d"
-        Title="Discord AIO" Height="700" Width="1200"
+        Title="BITNW MUSIC" Height="700" Width="1200"
         WindowStyle="None"
         AllowsTransparency="True"
         Background="Transparent" MouseDown="Window_MouseDown" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/aionew.png">

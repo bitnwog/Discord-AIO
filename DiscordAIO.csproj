@@ -1,18 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <Nullable>enable</Nullable>
-    <AssemblyName>discord_aio_release</AssemblyName>
+    <AssemblyName>BITNW_MUSIC</AssemblyName>
     <RootNamespace>discord_aio_release</RootNamespace>
+    <Product>BITNW MUSIC</Product>
+    <Company>BITNW</Company>
+    <Description>BITNW MUSIC Application</Description>
+    <Copyright>Copyright © BITNW 2025</Copyright>
     <ApplicationIcon>aionew.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.8.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.12.0" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <PackageReference Include="System.Management" Version="8.0.0" />
+    <PackageReference Include="System.Management" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>

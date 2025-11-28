@@ -2,7 +2,7 @@
 
 All notable changes to this customized version of Discord AIO are documented in this file.
 
-## [BITNW MUSIC Edition] - 2025-11-28
+## [BITNW MUSIC v2.0.0] - 2025-11-28
 
 ### 🎨 Visual Customizations
 
@@ -47,24 +47,25 @@ All notable changes to this customized version of Discord AIO are documented in 
 ### 🔧 Technical Improvements
 
 #### Framework Updates
-- **Upgraded to .NET 6.0** from older framework
-- All projects now target `net6.0-windows` (main app) or `net6.0`
+- **Upgraded to .NET 8.0** from older framework
+- All projects now target `net8.0-windows` (main app) or `net8.0`
 - Modern SDK-style project format for better compatibility
 
 #### NuGet Package Updates
 ```xml
 Main Application:
-- Microsoft.CodeAnalysis.CSharp: v4.8.0 (updated)
+- Microsoft.CodeAnalysis.CSharp: v4.12.0 (updated)
 - Newtonsoft.Json: v13.0.3 (updated)
-- System.Management: v8.0.0 (updated)
+- System.Management: v9.0.0 (updated)
 
 Compiler:
-- Microsoft.CodeAnalysis.CSharp: v4.8.0 (updated)
+- Microsoft.CodeAnalysis.CSharp: v4.12.0 (updated)
 - Microsoft.CodeDom.Providers.DotNetCompilerPlatform: v4.1.0 (updated)
 
 Pentest:
-- BouncyCastle: v1.8.9 (updated)
-- System.Management: v8.0.0 (updated)
+- BouncyCastle.Cryptography: v2.4.0 (updated)
+- System.Management: v9.0.0 (updated)
+- System.Security.Cryptography.ProtectedData: v9.0.0 (new)
 ```
 
 #### Code Quality Enhancements
@@ -242,7 +243,7 @@ All logo images properly configured as embedded resources:
 - Project structure modernized
 
 **Manual Steps Required:**
-- Must rebuild on Windows with .NET 6.0 SDK
+- Must rebuild on Windows with .NET 8.0 SDK
 - Must install Inter font for proper rendering
 - API endpoints may need reconfiguration
 
@@ -251,8 +252,8 @@ All logo images properly configured as embedded resources:
   - Solution: App handles this gracefully
 - Original logo files replaced
   - Solution: Keep backups if original branding needed
-- .NET Framework → .NET 6.0
-  - Solution: Install .NET 6.0 SDK
+- .NET Framework → .NET 8.0
+  - Solution: Install .NET 8.0 SDK
 
 ### 🔄 Backwards Compatibility
 
@@ -264,7 +265,7 @@ All logo images properly configured as embedded resources:
 - ✅ HWID detection method same
 
 #### Not Maintained
-- ❌ .NET Framework builds (now .NET 6.0)
+- ❌ .NET Framework builds (now .NET 8.0)
 - ❌ Original branding/logos
 - ❌ Direct API compatibility (localhost endpoints)
 
@@ -290,6 +291,7 @@ All logo images properly configured as embedded resources:
 
 #### Potential Enhancements
 - [ ] Add configuration file for API endpoints
+- [x] Upgrade to .NET 8.0
 - [ ] Implement local statistics database
 - [ ] Add theme customization system
 - [ ] Create installer/setup project
@@ -324,23 +326,24 @@ All logo images properly configured as embedded resources:
 - **Logo Design**: BITNW MUSIC branding
 
 #### Technologies Used
-- .NET 6.0
+- .NET 8.0 LTS
 - WPF (Windows Presentation Foundation)
 - WinForms
 - Roslyn Compiler
-- BouncyCastle Cryptography
+- BouncyCastle.Cryptography
 - Newtonsoft.Json
 
 ---
 
 ## Version History
 
-### BITNW MUSIC Edition (2025-11-28)
+### BITNW MUSIC v2.0.0 (2025-11-28)
 - Complete rebrand with BITNW MUSIC logos
-- Updated to .NET 6.0
+- Updated to .NET 8.0 LTS
 - Improved error handling
 - Comprehensive documentation
 - Project structure modernization
+- All dependencies updated to latest versions
 
 ### Original Base Version
 - Discord AIO b1.1.1 by szajjch
